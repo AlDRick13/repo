@@ -31,6 +31,30 @@ function printCars(carsData){
 }
 
 function addCar(){
+    const inputMarca = document.getElementById('marca');
+    const inputModelo = document.getElementById('modelo');
+    const inputColor = document.getElementById('color');
+    const inputAño = document.getElementById('año');
+    const inputPrecio = document.getElementById('precio');
+    const inputLinkImg = document.getElementById('link-img');
+    const carMarca = inputMarca.value;
+    const carModelo = inputModelo.value;
+    const carColor = inputColor.value;
+    const carAño = inputAño.value;
+    const carPrecio = inputPrecio.value;
+    const linkImg = inputLinkImg.value;
+    const newCar = {
+        id: 0,
+        marca: carMarca,
+        modelo: carModelo,
+        color: carColor,
+        año: carAño,
+        precio: carPrecio,
+        image: linkImg, 
+        }
+        preloadedCars.push(newCar);
+        printCars(preloadedCars);
+        resetForm();
 
 }
 function resetForm(){

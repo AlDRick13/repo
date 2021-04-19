@@ -10,25 +10,36 @@
 <body>
     <div class="container mt-5">
         <div class="d-flex justify-content-end py-3">
-            <button class="btn btn-outline-primary" onclick="showFormContainer()">Crear un nuevo usuario</button>
+            <button class="btn btn-outline-primary">Crear un nuevo usuario</button>
         </div>
 
     <div class="card " id="create-car-container">
         <div class="card-body">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <form id="cars-form" action="/cars" onsubmit="event.preventDefault()">
+                <div class="form-group">
+                  <label for="marca">Marca</label>
+                  <input type="text" class="form-control" id="marca" aria-describedby="emailHelp">
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="form-group">
+                  <label for="modelo">Modelo</label>
+                  <input type="text" class="form-control" id="marca" aria-describedby="emailHelp">
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
+                <div class="form-group">
+                    <label for="Color">Color</label>
+                    <input type="text" class="form-control" id="marca" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="año">Año</label>
+                    <input type="text" class="form-control" id="marca" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="precio">Precio</label>
+                    <input type="text" class="form-control" id="marca" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="link-img">Url de la imagen</label>
+                    <input type="text" class="form-control" id="marca" aria-describedby="emailHelp">
+                  </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>
